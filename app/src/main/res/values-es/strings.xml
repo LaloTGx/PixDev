@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_version">Version de la App: 1.0.0 </string>
+    <string name="today">Hoy</string>
+    <string name="yesterday">Ayer</string>
+    <string name="ago">Hace</string>
+    <string name="minutes">minutos</string>
+    <string name="just_now">Justo ahora</string>
+    <string name="minutes_ago">Hace %1$d minutos</string>
+    <string name="today_at">Hoy a las %1$s</string>
+    <string name="yesterday_at">Ayer a las %1$s</string>
+    <string name="day_at">%1$s a las %2$s</string>
+
+    <string name="sort_name_ascending">Nombre ascendente</string>
+    <string name="sort_name_descending">Nombre descendente</string>
+    <string name="sort_date_newest_first">Más recientes</string>
+    <string name="sort_date_oldest_first">Más antiguos</string>
+
+    <string name="good_morning">Buenos Dias</string>
+    <string name="good_afternoon">Buenas Tardes</string>
+    <string name="good_night">Buenas Noches</string>
+    <string name="your_projects">Tus Proyectos</string>
+    <string name="dialog_title_add_project">Agregar nuevo proyecto</string>
+    <string name="project_updated_message">Proyecto \'%1$s\' actualizado.</string>
+    <string name="dialog_title_modify_project">Modificar proyecto</string>
+    <string name="project_name_label">Nombre del proyecto</string>
+    <string name="no_projects_message">No tienes ningún proyecto. \n Presiona el botón [+] para crear uno.</string>
+    <string name="pin_limit_message">Solo puedes pinear hasta 3 proyectos.</string>
+    <string name="project_limit_message">Solo puedes tener hasta 5 proyectos.</string>
+
+    <string name="language">Idioma</string>
+    <string name="spanish">Español</string>
+    <string name="english">Ingles</string>
+    <string name="settings">Ajustes</string>
+    <string name="app_start_title">Inicio de la app</string>
+    <string name="always_full_intro">Mostrar intro completo siempre.</string>
+    <string name="short_after_first">Mostrar intro corta después del primer uso.</string>
+    <string name="language_change_info">Los cambios se aplicarán al reiniciar la app.</string>
+
+    <string name="first_day_of_week">Primer dia de la semana</string>
+    <string name="sunday">Domingo</string>
+    <string name="monday">Lunes</string>
+
+    <string name="developed_by">Desarrollado por:</string>
+    <string name="computer_engineer">Ingeniero en Computación</string>
+    <string name="connect_me">Encuentrame en:</string>
+    <string name="portfolio">Portafolio</string>
+
+    <string name="req_sort_default_order">Orden predeterminado</string>
+    <string name="req_sort_name_ascending">Nombre (A-Z)</string>
+    <string name="req_sort_name_descending">Nombre (Z-A)</string>
+
+    <string name="tab_pending">Pendiente</string>
+    <string name="tab_completed">Completado</string>
+
+    <string name="requirements">Requerimientos</string>
+    <string name="no_requirements">Aún no hay requerimientos.</string>
+    <string name="no_pending_requirements">No hay requerimientos pendientes</string>
+    <string name="no_completed_requirements">No hay requerimientos completados</string>
+
+    <string name="priority_label">Prioridad:</string>
+    <string name="priority_high">alta</string>
+    <string name="priority_medium">media</string>
+    <string name="priority_low">baja</string>
+    <string name="date_today">Hoy</string>
+    <string name="date_tomorrow">Mañana</string>
+    <string name="date_label">Fecha:</string>
+    <string name="at_time_label">a las</string>
+
+    <string name="req_sort_priority_ascending">Prioridad (Ascendente)</string>
+    <string name="req_sort_priority_descending">Prioridad (Descendente)</string>
+    <string name="filter_show_all">Mostrar Todo</string>
+    <string name="priority_essential">Esencial</string>
+    <string name="priority_mandatory">Obligatorio</string>
+    <string name="priority_optional">Opcional</string>
+
+    <string name="progress_text">Progreso: %1$d%%</string>
+    <string name="pinned_indicator">FIJADO</string>
+
+    <string name="tab_harmonies">Armonías</string>
+    <string name="tab_contrast">Contraste</string>
+    <string name="tab_palettes">Paletas</string>
+    <string name="hex_label">HEX:</string>
+    <string name="rgb_label">RGB:</string>
+    <string name="hue_label">Tono:</string>
+    <string name="opacity_label">Opacidad:</string>
+    <string name="color_copied_to_clipboard">Hexadecimal %1$s copiado al portapapeles</string>
+    <string name="color_harmonies_title">Armonías del Color</string>
+    <string name="select_harmony_content_description">Seleccionar Armonía</string>
+
+    <string name="harmony_complementary">Complementario</string>
+    <string name="harmony_triadic">Triádico</string>
+    <string name="harmony_analogous">Análogo</string>
+    <string name="harmony_monochromatic">Monocromático</string>
+    <string name="harmony_compound">Compuesto</string>
+    <string name="primary_color_label">Color Primario</string>
+    <string name="secondary_color_label">Color Secundario</string>
+    <string name="example_text">Texto de Ejemplo</string>
+    <string name="ratio_label">Ratio:</string>
+    <string name="rating_label">Calificación:</string>
+    <string name="contrast_excellent">Excelente</string>
+    <string name="contrast_acceptable">Aceptable</string>
+    <string name="contrast_minimum">Mínimo</string>
+    <string name="contrast_poor">Pobre</string>
+    <string name="criterion_aa_large">AA (Texto Grande)</string>
+    <string name="criterion_aa_normal">AA (Texto Normal)</string>
+    <string name="criterion_aaa_enhanced">AAA (Texto Mejorado)</string>
+    <string name="meets_criterion_true">Cumple ✅</string>
+    <string name="meets_criterion_false">No Cumple ❌</string>
+
+    <string name="palette_number">Paleta %1$d</string>
+    <string name="color_pasted_successfully">Color pegado exitosamente: #%1$s</string>
+    <string name="error_parsing_hex">Error al parsear el color HEX: %1$s</string>
+    <string name="invalid_hex_format">Formato HEX inválido en el portapapeles. Debe ser FFFFFF o FFFFFFFF.</string>
+
+    <string name="color_input_title">Introducir Color</string>
+    <string name="use_rgb_switch">Usar RGB</string>
+    <string name="hex_value_label">Valor Hexadecimal</string>
+    <string name="hex_placeholder">FFFFFF o FFFFFFFF</string>
+    <string name="invalid_hex_format_error">Formato HEX inválido. Ej: FFFFFF o FFFFFFFF</string>
+    <string name="rgb_values_label">Valores RGB (0-255):</string>
+    <string name="invalid_rgb_alpha_error">Los valores RGB/Alfa deben ser números entre 0 y 255.</string>
+    <string name="current_color_display">Color actual: %1$s</string>
+
+    <string name="clipboard_empty_or_not_text">El portapapeles está vacío o el contenido no es texto.</string>
+    <string name="clipboard_empty">El portapapeles está vacío.</string>
+
+    <string name="add_requirement_title">Agregar Requerimiento</string>
+    <string name="requirement_name_label">Nombre del requerimiento</string>
+    <string name="limit_time_label">Hora límite: %1$s</string>
+    <string name="limit_date_label">Fecha límite: %1$s</string>
+    <string name="add_button">Agregar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="priority_display_label">Prioridad: %1$s</string>
+
+    <string name="priority_essential_name">Esencial</string>
+    <string name="priority_mandatory_name">Obligatorio</string>
+    <string name="priority_optional_name">Opcional</string>
+
+    <string name="delete_project_dialog_title">Eliminar Proyecto: %1$s</string>
+    <string name="delete_project_confirmation_text">¿Deseas eliminar el proyecto \"%1$s\"? \n Esta acción no se puede deshacer.</string>
+    <string name="delete_button_confirm">Sí, Eliminar</string>
+    <string name="delete_button_cancel">No, Cancelar</string>
+
+    <string name="home_dialog_title">Home</string>
+    <string name="home_dialog_note_message">Se guardará localmente en tu dispositivo</string>
+    <string name="home_dialog_single_tap_title">Toque simple</string>
+    <string name="home_dialog_single_tap_description">Toca una vez para abrir el proyecto seleccionado</string>
+    <string name="home_dialog_double_tap_title">Doble toque</string>
+    <string name="home_dialog_double_tap_description">Toca dos veces para editar el nombre del proyecto</string>
+    <string name="home_dialog_swipe_title">Deslizar</string>
+    <string name="home_dialog_swipe_description">Desliza hacia cualquier direccion para eliminar el proyecto</string>
+    <string name="home_dialog_long_press_title">Toque prolongado</string>
+    <string name="home_dialog_long_press_description">Mantén presionado para fijar el proyecto</string>
+</resources>

@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_version">App Version: 1.0.0 </string>
+    <string name="app_name" translatable="false">PixDev</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="ago">ago</string>
+    <string name="minutes">minutes</string>
+    <string name="just_now">Just now</string>
+    <string name="minutes_ago">%1$d minutes ago</string>
+    <string name="today_at">Today at %1$s</string>
+    <string name="yesterday_at">Yesterday at %1$s</string>
+    <string name="day_at">%1$s at %2$s</string>
+
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_night">Good Night</string>
+    <string name="your_projects">Your Projects</string>
+
+    <string name="dialog_title_add_project">Add New Project</string>
+    <string name="project_updated_message">Project \'%1$s\' updated.</string>
+    <string name="dialog_title_modify_project">Modify Project</string>
+    <string name="project_name_label">Project name</string>
+
+    <string name="no_projects_message">You have no projects.\n Press the [+] button to create one.</string>
+    <string name="pin_limit_message">You can only pin up to 3 projects.</string>
+    <string name="project_limit_message">You can only have up to 5 projects.</string>
+
+    <string name="sort_name_ascending">Name ascending</string>
+    <string name="sort_name_descending">Name descending</string>
+    <string name="sort_date_newest_first">Newest first</string>
+    <string name="sort_date_oldest_first">Oldest first</string>
+
+    <string name="language">Language</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="settings">Settings</string>
+    <string name="app_start_title">Startup Style</string>
+    <string name="always_full_intro">Always show full intro</string>
+    <string name="short_after_first">Short intro after first time</string>
+    <string name="language_change_info">Changes will apply after restarting the app.</string>
+
+    <string name="first_day_of_week">First day of week</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+
+
+    <string name="developed_by">Developed by:</string>
+    <string name="computer_engineer">Computer Engineer</string>
+    <string name="connect_me">Connect with me:</string>
+    <string name="portfolio">Portfolio</string>
+
+    <string name="req_sort_default_order">Default order</string>
+    <string name="req_sort_name_ascending">Name (A-Z)</string>
+    <string name="req_sort_name_descending">Name (Z-A)</string>
+
+    <string name="tab_pending">Pending</string>
+    <string name="tab_completed">Completed</string>
+
+    <string name="requirements">Requirements</string>
+    <string name="no_requirements">There are no requirements yet.</string>
+
+    <string name="priority_label">Priority:</string>
+    <string name="priority_high">high</string>
+    <string name="priority_medium">medium</string>
+    <string name="priority_low">low</string>
+    <string name="date_today">Today</string>
+    <string name="date_tomorrow">Tomorrow</string>
+    <string name="date_label">Date:</string>
+    <string name="at_time_label">at</string>
+    <string name="priority_essential">Essential</string>
+    <string name="priority_mandatory">Mandatory</string>
+    <string name="priority_optional">Optional</string>
+
+    <string name="progress_text">Progress: %1$d%%</string>
+    <string name="pinned_indicator">PINNED</string>
+
+    <string name="tab_harmonies">Harmonies</string>
+    <string name="tab_contrast">Contrast</string>
+    <string name="tab_palettes">Palettes</string>
+    <string name="hex_label">HEX:</string>
+    <string name="rgb_label">RGB:</string>
+    <string name="hue_label">Hue:</string>
+    <string name="opacity_label">Opacity:</string>
+    <string name="color_copied_to_clipboard">Hexadecimal %1$s copied to clipboard</string>
+    <string name="color_harmonies_title">Color Harmonies</string>
+    <string name="select_harmony_content_description">Select Harmony</string>
+
+    <string name="harmony_complementary">Complementary</string>
+    <string name="harmony_triadic">Triadic</string>
+    <string name="harmony_analogous">Analogous</string>
+    <string name="harmony_monochromatic">Monochromatic</string>
+    <string name="harmony_compound">Compound</string>
+
+    <string name="primary_color_label">Primary Color</string>
+    <string name="secondary_color_label">Secondary Color</string>
+    <string name="example_text">Example Text</string>
+    <string name="ratio_label">Ratio:</string>
+    <string name="rating_label">Rating:</string>
+    <string name="contrast_excellent">Excellent</string>
+    <string name="contrast_acceptable">Acceptable</string>
+    <string name="contrast_minimum">Minimum</string>
+    <string name="contrast_poor">Poor</string>
+    <string name="criterion_aa_large">AA (Large Text)</string>
+    <string name="criterion_aa_normal">AA (Normal Text)</string>
+    <string name="criterion_aaa_enhanced">AAA (Enhanced Text)</string>
+    <string name="meets_criterion_true">Meets ✅</string>
+    <string name="meets_criterion_false">Does not Meet ❌</string>
+
+    <string name="palette_number">Palette %1$d</string>
+    <string name="color_pasted_successfully">Color pasted successfully: #%1$s</string>
+    <string name="error_parsing_hex">Error parsing HEX color: %1$s</string>
+    <string name="invalid_hex_format">Invalid HEX format in clipboard. Must be FFFFFF or FFFFFFFF.</string>
+
+    <string name="color_input_title">Enter Color</string>
+    <string name="use_rgb_switch">Use RGB</string>
+    <string name="hex_value_label">Hex Value</string>
+    <string name="hex_placeholder">FFFFFF or FFFFFFFF</string>
+    <string name="invalid_hex_format_error">Invalid HEX format. Ex: FFFFFF or FFFFFFFF</string>
+    <string name="rgb_values_label">RGB Values (0-255):</string>
+    <string name="invalid_rgb_alpha_error">RGB/Alpha values must be numbers between 0 and 255.</string>
+    <string name="current_color_display">Current Color: %1$s</string>
+
+    <string name="clipboard_empty_or_not_text">Clipboard is empty or content is not text.</string>
+    <string name="clipboard_empty">Clipboard is empty.</string>
+
+    <string name="add_requirement_title">Add Requirement</string>
+    <string name="requirement_name_label">Requirement Name</string>
+    <string name="limit_time_label">Limit Time: %1$s</string>
+    <string name="limit_date_label">Limit Date: %1$s</string>
+    <string name="add_button">Add</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="priority_display_label">Priority: %1$s</string>
+
+    <string name="no_pending_requirements">There are no pending requirements</string>
+    <string name="no_completed_requirements">There are no completed requirements</string>
+
+    <string name="req_sort_priority_ascending">Priority (Ascending)</string>
+    <string name="req_sort_priority_descending">Priority (Descending)</string>
+    <string name="filter_show_all">Show ALl</string>
+    <string name="priority_essential_name">Essential</string>
+    <string name="priority_mandatory_name">Mandatory</string>
+    <string name="priority_optional_name">Optional</string>
+
+    <string name="delete_project_dialog_title">Delete Proyect: \"%1$s\"</string>
+    <string name="delete_project_confirmation_text">Do you want to delete the project \"%1$s\"? \n This action cannot be undone.</string>
+
+    <string name="delete_button_confirm">Yes, Delete</string>
+    <string name="delete_button_cancel">No, Cancel</string>
+
+    <string name="home_dialog_title">Home</string>
+    <string name="home_dialog_note_message">Projects are stored locally on your device</string>
+    <string name="home_dialog_single_tap_title">Single tap</string>
+    <string name="home_dialog_single_tap_description">Tap once to open the selected project</string>
+    <string name="home_dialog_double_tap_title">Double tap</string>
+    <string name="home_dialog_double_tap_description">Tap twice to edit the project name</string>
+    <string name="home_dialog_swipe_title">Swipe</string>
+    <string name="home_dialog_swipe_description">Swipe in any direction to delete the project</string>
+    <string name="home_dialog_long_press_title">Long press</string>
+    <string name="home_dialog_long_press_description">Press and hold to pin the project</string>
+</resources>
