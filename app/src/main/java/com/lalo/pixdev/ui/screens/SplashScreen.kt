@@ -31,9 +31,9 @@ class SplashScreenActivity : ComponentActivity() {
                 if (alwaysShowLongSplash) {
                     FullSpriteAnimation(
                         drawableResId = R.drawable.logomov,
-                        frameCount = 130,
+                        frameCount = 111,
                         startFrame = 0,
-                        endFrame = 129,
+                        endFrame = 110,
                         animationScale = 8f,
                         animationAreaWidth = 300.dp,
                         animationAreaHeight = 300.dp,
@@ -44,9 +44,9 @@ class SplashScreenActivity : ComponentActivity() {
                 } else if (isFirstLaunch) {
                     FullSpriteAnimation(
                         drawableResId = R.drawable.logomov,
-                        frameCount = 130,
+                        frameCount = 111,
                         startFrame = 0,
-                        endFrame = 129,
+                        endFrame = 110,
                         animationScale = 8f,
                         animationAreaWidth = 300.dp,
                         animationAreaHeight = 300.dp,
@@ -60,9 +60,9 @@ class SplashScreenActivity : ComponentActivity() {
                 } else {
                     FullSpriteAnimation(
                         drawableResId = R.drawable.logomov,
-                        frameCount = 130,
+                        frameCount = 111,
                         startFrame = 0,
-                        endFrame = 47,
+                        endFrame = 52,
                         animationScale = 8f,
                         animationAreaWidth = 300.dp,
                         animationAreaHeight = 300.dp,
