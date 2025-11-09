@@ -1,4 +1,4 @@
-package com.lalo.pixdev.ui.screens
+package com.lalo.pixdev.ui.screens.home
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -42,6 +42,7 @@ import kotlinx.coroutines.launch
 import java.time.LocalTime
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.unit.sp
 
 @Composable
@@ -93,9 +94,16 @@ fun HomeScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp, vertical = 41.dp),
-                horizontalArrangement = Arrangement.End,
+                horizontalArrangement = Arrangement.Start,
                 verticalAlignment = Alignment.CenterVertically
             ) {
+                Spacer(modifier = Modifier.height(5.dp))
+                TypewriterText(
+                    text = greetingMessage,
+                    textStyle = MaterialTheme.typography.titleLarge.copy( fontSize = 40.sp, textAlign = TextAlign.Left),
+                    delayBetweenCharsMillis = 100L
+                )
+                Spacer(modifier = Modifier.weight(1f))
                 GeneralSettingsButton(navController = navController)
             }
         }
@@ -148,14 +156,6 @@ fun HomeScreen(
                     )
                 }
             }
-
-            Spacer(modifier = Modifier.height(5.dp))
-            TypewriterText(
-                text = greetingMessage,
-                textStyle = MaterialTheme.typography.titleLarge.copy( fontSize = 40.sp, textAlign = TextAlign.Center),
-                modifier = Modifier.fillMaxWidth(),
-                delayBetweenCharsMillis = 100L
-            )
 
             Spacer(modifier = Modifier.height(10.dp))
 

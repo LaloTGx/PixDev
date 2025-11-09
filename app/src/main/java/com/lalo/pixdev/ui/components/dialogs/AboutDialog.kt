@@ -105,7 +105,7 @@ fun AboutDialog(onDismissRequest: () -> Unit) {
                     Spacer(modifier = Modifier.height(8.dp))
                     SpriteImage(
                         drawableResId = R.drawable.logomov,
-                        frameIndex = 44,
+                        frameIndex = 38,
                         frameWidth = 64,
                         frameHeight = 64,
                         scale = 1f,

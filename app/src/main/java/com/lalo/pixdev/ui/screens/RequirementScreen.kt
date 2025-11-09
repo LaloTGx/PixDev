@@ -180,29 +180,6 @@ fun RequirementScreen(
                                 interactionSource = reqDialogInteractionSource
                             )
                     )
-
-                    Spacer(Modifier.width(8.dp))
-
-                    val colorsInteractionSource = remember { MutableInteractionSource() }
-                    val colorsIsPressed by colorsInteractionSource.collectIsPressedAsState()
-                    val currentColorsIconResId = if (colorsIsPressed) pressedPixIconResId else normalPixIconResId
-
-                    SpriteImage(
-                        drawableResId = currentColorsIconResId,
-                        frameIndex = 3,
-                        frameHeight = 64,
-                        frameWidth = 64,
-                        scale = 0.7f,
-                        modifier = Modifier
-                            .clip(RoundedCornerShape(0.dp))
-                            .bouncyClickable(
-                                onClick = { navController.navigate(Routes.colors(project.id)) },
-                                pressedScale = 0.9f,
-                                pressedDarkenFactor = 0f,
-                                unpressedScale = 1f,
-                                interactionSource = colorsInteractionSource
-                            )
-                    )
                 }
 
                 RequirementInputPanel(

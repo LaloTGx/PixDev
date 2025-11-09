@@ -14,9 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.lalo.pixdev.ui.screens.*
-import com.lalo.pixdev.viewmodel.ColorViewModel
+import com.lalo.pixdev.ui.screens.home.HomeScreen
+import com.lalo.pixdev.ui.screens.settings.SettingScreen
 import com.lalo.pixdev.viewmodel.ProjectViewModel
-
 
 @Composable
 fun AppNavGraph(
@@ -46,25 +46,6 @@ fun AppNavGraph(
                     RequirementScreen(project = project!!, navController = navController)
                 }else{
                     Text("Cargando requisitos o Proyecto no encontrado", modifier = Modifier.padding(16.dp))
-                }
-            } else {
-                Text("ID de proyecto inválido", modifier = Modifier.padding(16.dp))
-            }
-        }
-
-        composable(
-            route = Routes.COLORS,
-            arguments = listOf(navArgument("projectId") { type = NavType.StringType })
-        ) { backStackEntry ->
-            val projectIdString = backStackEntry.arguments?.getString("projectId")
-            if (projectIdString != null) {
-                val projectViewModel: ProjectViewModel = hiltViewModel()
-                val project by projectViewModel.getProjectById(projectIdString).collectAsState(initial = null)
-                if (project != null){
-                    val colorViewModel: ColorViewModel = hiltViewModel()
-                    ColorsScreen(project = project!!, navController = navController, colorViewModel = colorViewModel)
-                }else{
-                    Text("Cargando colores o Proyecto no encontrado", modifier = Modifier.padding(16.dp))
                 }
             } else {
                 Text("ID de proyecto inválido", modifier = Modifier.padding(16.dp))

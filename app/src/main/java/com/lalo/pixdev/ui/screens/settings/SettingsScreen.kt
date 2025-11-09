@@ -1,4 +1,4 @@
-package com.lalo.pixdev.ui.screens
+package com.lalo.pixdev.ui.screens.settings
 
 import android.content.Context
 import androidx.compose.animation.AnimatedVisibility
@@ -284,7 +284,7 @@ fun SettingScreen(navController: NavController) {
                 ) {
                     SpriteImage(
                         drawableResId = R.drawable.logomov,
-                        frameIndex = 44,
+                        frameIndex = 38,
                         frameHeight = 64,
                         frameWidth = 64,
                         scale = 2f,

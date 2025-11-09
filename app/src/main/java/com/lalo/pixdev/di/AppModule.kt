@@ -5,9 +5,6 @@ import androidx.room.Room
 import com.lalo.pixdev.data.local.PixDevDatabase
 import com.lalo.pixdev.data.local.dao.ProjectDao
 import com.lalo.pixdev.data.local.dao.RequirementDao
-import com.lalo.pixdev.data.local.dao.ColorDao
-import com.lalo.pixdev.data.local.repository.ColorRepository
-import com.lalo.pixdev.data.local.repository.ColorRepositoryImpl
 import com.lalo.pixdev.data.local.repository.ProjectRepository
 import com.lalo.pixdev.data.local.repository.ProjectRepositoryImpl
 import com.lalo.pixdev.data.local.repository.RequirementRepository
@@ -55,16 +52,5 @@ object AppModule {
         requirementDao: RequirementDao
     ): RequirementRepository {
         return RequirementRepositoryImpl(requirementDao)
-    }
-
-    @Provides
-    fun provideColorDao(db: PixDevDatabase): ColorDao = db.colorDao()
-
-    @Provides
-    @Singleton
-    fun provideColorRepository(
-        colorDao: ColorDao
-    ): ColorRepository {
-        return ColorRepositoryImpl(colorDao)
     }
 }

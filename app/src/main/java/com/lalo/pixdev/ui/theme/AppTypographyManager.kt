@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import com.lalo.pixdev.R
-import com.lalo.pixdev.ui.screens.CalendarPrefs
+import com.lalo.pixdev.ui.screens.settings.CalendarPrefs
 
 // Definimos TODAS las fuentes personalizadas AQUI
 val pixelFamily = FontFamily(
