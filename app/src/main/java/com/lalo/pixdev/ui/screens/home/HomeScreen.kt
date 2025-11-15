@@ -44,6 +44,7 @@ import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.unit.sp
+import com.lalo.pixdev.utils.RetroShadowWrapper
 
 @Composable
 fun HomeScreen(
@@ -68,9 +69,7 @@ fun HomeScreen(
     val listState = rememberLazyListState()
     val density = LocalDensity.current
 
-    val currentHour by remember {
-        derivedStateOf { LocalTime.now().hour }
-    }
+    val currentHour by remember { derivedStateOf { LocalTime.now().hour } }
 
     val greetingMessage by remember {
         derivedStateOf {
@@ -95,12 +94,11 @@ fun HomeScreen(
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp, vertical = 41.dp),
                 horizontalArrangement = Arrangement.Start,
-                verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.Top
             ) {
-                Spacer(modifier = Modifier.height(5.dp))
                 TypewriterText(
                     text = greetingMessage,
-                    textStyle = MaterialTheme.typography.titleLarge.copy( fontSize = 40.sp, textAlign = TextAlign.Left),
+                    textStyle = MaterialTheme.typography.titleLarge.copy( fontSize = 25.sp, textAlign = TextAlign.Left),
                     delayBetweenCharsMillis = 100L
                 )
                 Spacer(modifier = Modifier.weight(1f))
@@ -156,7 +154,6 @@ fun HomeScreen(
                     )
                 }
             }
-
             Spacer(modifier = Modifier.height(10.dp))
 
             Row(
@@ -216,7 +213,6 @@ fun HomeScreen(
                                 interactionSource = addButtonInteractionSource
                             )
                     )
-
                     Spacer(Modifier.width(5.dp))
 
                     Box {
@@ -324,6 +320,7 @@ fun HomeScreen(
                                     Box(
                                         modifier = Modifier
                                             .fillMaxSize()
+                                            .clip(RoundedCornerShape(3.dp))
                                             .background(Color.Red),
                                         contentAlignment = alignment
                                     ) {
@@ -340,27 +337,42 @@ fun HomeScreen(
                                     }
                                 },
                                 content = {
-                                    ProjectItem(
-                                        project = project,
-                                        onLongClick = {
-                                            val success = viewModel.pinProject(project)
-                                            if (!success) {
-                                                coroutineScope.launch {
-                                                    snackbarHostState.showSnackbarOnce(context.getString(R.string.pin_limit_message))
-                                                }
-                                            }
-                                            coroutineScope.launch { listState.animateScrollToItem(0) }
-                                        },
-                                        onClick = {
-                                            navController.navigate(Routes.requirements(project.id))
-                                        },
-                                        onDoubleClick = {
-                                            projectToEdit = project
-                                            showEditProjectDialog = true
-                                        },
-                                        completionPercentage = completionPercentage,
+                                    val shadowColor = MaterialTheme.colorScheme.onBackground
+
+                                    RetroShadowWrapper(
                                         modifier = Modifier.fillMaxWidth(),
-                                    )
+                                        shadowOffset = 6.dp,
+                                        shadowColor = shadowColor
+                                    ) { contentModifier -> ProjectItem(
+                                            project = project,
+                                            onLongClick = {
+                                                val success = viewModel.pinProject(project)
+                                                if (!success) {
+                                                    coroutineScope.launch {
+                                                        snackbarHostState.showSnackbarOnce(
+                                                            context.getString(
+                                                                R.string.pin_limit_message
+                                                            )
+                                                        )
+                                                    }
+                                                }
+                                                coroutineScope.launch {
+                                                    listState.animateScrollToItem(
+                                                        0
+                                                    )
+                                                }
+                                            },
+                                            onClick = {
+                                                navController.navigate(Routes.requirements(project.id))
+                                            },
+                                            onDoubleClick = {
+                                                projectToEdit = project
+                                                showEditProjectDialog = true
+                                            },
+                                            completionPercentage = completionPercentage,
+                                            modifier = Modifier.fillMaxWidth(),
+                                        )
+                                    }
                                 },
                                 modifier = Modifier
                                     .padding(vertical = 4.dp)

@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -26,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import com.lalo.pixdev.viewmodel.model.Project
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
@@ -71,9 +73,8 @@ fun ProjectItem(
     Box(
         modifier = modifier
             .fillMaxWidth()
+            .clip(RoundedCornerShape(3.dp))
             .background(backgroundColor)
-            .border(6.dp, onBackgroundColor)
-            .clipToBounds()
             .drawBehind {
                 if (project.isPinned || fillProgress > 0f) {
                     drawRect(
@@ -83,6 +84,7 @@ fun ProjectItem(
                     )
                 }
             }
+            .border(3.dp, onBackgroundColor, RoundedCornerShape(3.dp))
             .combinedClickable(
                 interactionSource = remember { MutableInteractionSource() },
                 indication = null,
